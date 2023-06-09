@@ -1,4 +1,4 @@
-#define RECORDING_NAME "britva"
+#define RECORDING_NAME "oxrana_britva"
 #define RECORDING_TYPE_OnFooT 2
 #include <a_npc>
 
@@ -35,11 +35,7 @@ public OnPlayerStreamOut(playerid);
 public OnVehicleStreamIn(vehicleid);
 public OnVehicleStreamOut(vehicleid);*/
 
-public OnPlayerStreamIn(playerid)
-{
-SendCommand("/makaka");
-return 1;
-}
+
 public OnRecordingPlaybackEnd()
 {
 	StartRecordingPlayback(RECORDING_TYPE_OnFooT, RECORDING_NAME);
